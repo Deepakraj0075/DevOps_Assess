@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +19,7 @@
         }
 
         footer {
-            position: absolute;
+            position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
@@ -28,7 +27,8 @@
             height: auto;
             width: 100vw;
 
-            padding-top: 40px;
+            padding-top: 30px;
+            padding-bottom: 10px;
             color: #fff;
         }
 
@@ -72,7 +72,6 @@
             color: #fff;
             border: 1.1px solid white;
             padding: 5px;
-
             border-radius: 50%;
 
         }
@@ -80,8 +79,6 @@
         .socials a i {
             font-size: 1.1rem;
             width: 20px;
-
-
             transition: color .4s ease;
 
         }
@@ -94,7 +91,7 @@
             background: #000;
             width: 100vw;
             padding: 20px;
-            padding-bottom: 40px;
+            padding-bottom: 10px;
             text-align: center;
         }
 
@@ -142,7 +139,7 @@
 
         /* Split the screen in half */
         .split {
-            height: 50%;
+            height: 72%;
             width: 50%;
             position: absolute;
             z-index: 1;
@@ -153,44 +150,45 @@
 
         /* Control the left side */
         .left {
-            left: 0;
+            left: 0;  position: fixed;
             background-color: #f9f5f5;
         }
 
         /* Control the right side */
-        .right {
+        /* .right {
             right: 0;
             background-color: red;
-        }
+        } */
 
         /* If you want the content centered horizontally and vertically */
         .centered {
-            position: absolute;
-            top: 75%;
-            bottom: 75%;
-            left: 50%;
+            position: fixed;
+            top: 40%;
+            left: 25%;
             transform: translate(-50%, -50%);
-            text-align: center;
+            /* text-align: center; */
+            align-items: flex-start;
+            text-align: left;
         }
 
         /* Style the image inside the centered container, if needed */
-        .centered img {
-            width: 250px;
+        /* .centered img {
+            width: 50px;
             border-radius: 20%;
-        }
+        } */
 
-        .content {
+        /* .content {
             max-width: 700px;
             margin: auto;
             background: rgb(167, 147, 147);
             padding: 10px;
-        }
+        } */
 
         @media (max-width:500px) {
             .footer-menu ul {
                 display: flex;
                 margin-top: 10px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
         }
 
@@ -263,14 +261,15 @@
     <div>
         <!-- Header Part -->
         <!-- <div class="content">
-            <centre>
+         
                 <h1>Take the Test without any Cheating....!</h1>
-            </centre>
+          
         </div> -->
         <!-- <a href="www.aws.console.login" name="Take Test" value=""></a> -->
 
         <div class="split left">
             <div class="centered">
+                <h1>CloudThat Techologies Assessment</h1><br>
                 <!-- <img src="img_avatar2.png" alt="Avatar woman"> -->
                 <h2>Todays Assesment</h2><br>
                 <h4>Question:</h4>
@@ -284,8 +283,9 @@
                     <li> The website should be hosted on Apache Webserver.</li>
                 </ul>
                 <br>
+                <h4>Below are some organizational standards that need to be followed:</h4>
                 <ul class="f-menu">
-                    <li> Intance Name: 456ui07</li>
+                   
                     <li> EC2 instance size: t2.micro</li>
                     <li> AutoScaling Group Name: asg46704</li>
                     <li> LoadbalancerName: alb46704</li>
@@ -316,9 +316,6 @@
             <p>Some text here too.</p>
         </div>
     </div> -->
-
-
-
         <footer>
             <div class="footer-content">
                 <h3>CloudThat DevOps --- Team</h3>
