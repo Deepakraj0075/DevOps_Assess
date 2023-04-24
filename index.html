@@ -8,165 +8,256 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style media="screen">
-      *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: #fcfcfc;
-    font-family: sans-serif;
-}
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #111;
-    height: auto;
-    width: 100vw;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    padding-top: 40px;
-    color: #fff;
-}
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.footer-content h3{
-    font-size: 2.1rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    color: #cacdd2;
-}
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-.socials li{
-    margin: 0 10px;
-}
-.socials a{
-    text-decoration: none;
-    color: #fff;
-    border: 1.1px solid white;
-    padding: 5px;
+        body {
+            background: #fcfcfc;
+            font-family: sans-serif;
+        }
 
-    border-radius: 50%;
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #111;
+            height: auto;
+            width: 100vw;
 
-}
-.socials a i{
-    font-size: 1.1rem;
-    width: 20px;
+            padding-top: 40px;
+            color: #fff;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-content h3 {
+            font-size: 2.1rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+
+        .footer-content p {
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+            color: #cacdd2;
+        }
+
+        .socials {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+
+        .socials li {
+            margin: 0 10px;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: #fff;
+            border: 1.1px solid white;
+            padding: 5px;
+
+            border-radius: 50%;
+
+        }
+
+        .socials a i {
+            font-size: 1.1rem;
+            width: 20px;
 
 
-    transition: color .4s ease;
+            transition: color .4s ease;
 
-}
-.socials a:hover i{
-    color: aqua;
-}
+        }
 
-.footer-bottom{
-    background: #000;
-    width: 100vw;
-    padding: 20px;
-padding-bottom: 40px;
-    text-align: center;
-}
-.footer-bottom p{
-float: left;
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-.footer-bottom p a{
-  color:#44bae8;
-  font-size: 16px;
-  text-decoration: none;
-}
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
-.footer-menu{
-  float: right;
+        .socials a:hover i {
+            color: aqua;
+        }
 
-}
-.footer-menu ul{
-  display: flex;
-}
-.footer-menu ul li{
-padding-right: 10px;
-display: block;
-}
-.footer-menu ul li a{
-  color: #cfd2d6;
-  text-decoration: none;
-}
-.footer-menu ul li a:hover{
-  color: #27bcda;
-}
+        .footer-bottom {
+            background: #000;
+            width: 100vw;
+            padding: 20px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
 
-@media (max-width:500px) {
-.footer-menu ul{
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-}
+        .footer-bottom p {
+            float: left;
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+
+        .footer-bottom p a {
+            color: #44bae8;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .footer-bottom span {
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+
+        .footer-menu {
+            float: right;
+
+        }
+
+        .footer-menu ul {
+            display: flex;
+        }
+
+        .footer-menu ul li {
+            padding-right: 10px;
+            display: block;
+        }
+
+        .footer-menu ul li a {
+            color: #cfd2d6;
+            text-decoration: none;
+        }
+
+        .footer-menu ul li a:hover {
+            color: #27bcda;
+        }
+
+        /* Split the screen in half */
+        .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        /* Control the left side */
+        .left {
+            left: 0;
+            background-color: #111;
+        }
+
+        /* Control the right side */
+        .right {
+            right: 0;
+            background-color: red;
+        }
+
+        /* If you want the content centered horizontally and vertically */
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* Style the image inside the centered container, if needed */
+        .centered img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        .content {
+            max-width: 500px;
+            margin: auto;
+            background: rgb(133, 132, 132);
+            padding: 10px;
+        }
+
+        @media (max-width:500px) {
+            .footer-menu ul {
+                display: flex;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to my web page!</h1>
-    </header>
+    <div class="content">
+        <centre>
+            <h1>Take the Test without any Cheating....!</h1>
+        </centre>
+    </div>
     <!-- <a href="www.aws.console.login" name="Take Test" value=""></a> -->
-    <centre>
+
+    <div class="split left">
+        <div class="centered">
+            <!-- <img src="img_avatar2.png" alt="Avatar woman"> -->
+            <h2>Todays Assesment</h2>
+            <p>To launch a wordpress application on a server &  it will connect to the RDS Mysql as well<br>
+                The application should be higly scalable & available to the end users.<br>
+                <ul class="f-menu">
+                    <li>Intance Name: 456ui07</li>
+                    <li>region: ap-southeast-1</li>
+                    <li>rds-instance: 098iop</li>
+                    <li>load-balancer: 097jk7</li>
+                </ul>
+            </p>
+        </div>
         <a href="https://ap-south-1.console.aws.amazon.com/console/home?region=ap-south-1#">Take Test</a>
         <button name="Take Test">Take Test</button>
         <button name="Take Test">Finish Test</button>
-        <!-- <button name=""></button>
-    <button name="Take Test"></button> -->
-    </centre>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+            <img src="img_avatar.png" alt="Avatar man">
+            <h2>John Doe</h2>
+            <p>Some text here too.</p>
+        </div>
+    </div>
+
+
+
     <footer>
         <div class="footer-content">
             <h3>CloudThat DevOps --- Team</h3>
             <!-- <p>Raj Template is a blog website where you will find great tutorials on web design and development. Here each tutorial is beautifully described step by step with the required source code.</p> -->
             <ul class="socials">
                 <li><a href="https://www.facebook.com/cloudthat/"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/cloudthat?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://twitter.com/cloudthat?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+                            class="fa fa-twitter"></i></a></li>
                 <li><a href="https://www.cloudthat.com/"><i class="fa fa-google-plus"></i></a></li>
                 <li><a href="https://www.youtube.com/user/cloudthat"><i class="fa fa-youtube"></i></a></li>
                 <li><a href="https://in.linkedin.com/company/cloudthat"><i class="fa fa-linkedin-square"></i></a></li>
             </ul>
         </div>
         <div class="footer-bottom">
-            <p>copyright &copy; <a href="#">Deepak S & Deepakraj A L</a>  </p>
-                    <div class="footer-menu">
-                      <ul class="f-menu">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Blog</a></li>
-                      </ul>
-                    </div>
+            <p>copyright &copy; <a href="#">Deepak S & Deepakraj A L</a> </p>
+            <div class="footer-menu">
+                <ul class="f-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
         </div>
 
     </footer>
 </body>
+
 </html>
