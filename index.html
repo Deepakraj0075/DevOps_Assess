@@ -192,6 +192,7 @@
                 margin-bottom: 20px;
             }
         }
+
         /* .buttonsubmit {
   display: inline-block;
   padding: 15px 25px;
@@ -273,13 +274,32 @@
             <div class="centered">
                 <!-- <img src="img_avatar2.png" alt="Avatar woman"> -->
                 <h2>Todays Assesment</h2><br>
-                <p>To launch a wordpress application on a server & it will connect to the RDS Mysql as well
-                    The application should be higly scalable & available to the end users.<br><br>
+                <h4>Question:</h4>
+                <p>Your organization wants you to deploy a highly scalable WordPress on AWS.<br>
+                    <h4>Additional Requirement:</h4>
+                    <ul class="f-menu">
+                       
+                        <li>  The Deployment should be in the region  us-west-2.</li>
+                        <li>  The Scaling policy should depend on 60% CPU Utilization.</li> 
+                        <li>  The website should be distributed by a CDN to reduce load time.</li> 
+                        <li>  The website should be hosted on Apache Webserver.</li>
+                       </ul> 
+                    <br>
                 <ul class="f-menu">
                     <li>Intance Name: 456ui07</li>
-                    <li>region: ap-southeast-1</li>
-                    <li>rds-instance: 098iop</li>
-                    <li>load-balancer: 097jk7</li>
+                    <li>rEC2 instance size: t2.micro</li>
+                    <li> AutoScaling Group Name: asg46704</li>
+                    <li>  LoadbalancerName: alb46704</li>
+                    <li>  Database Instance Name: database46704</li>
+                    <li>   Database Instance Size: db.t2.micro</li>
+                    <li>  Database Engine: MySQL</li>
+                    <li>
+                        <p>Click on the key to download the keypair:
+                        <p>
+                            <a href="keyimage.jpg" download="w3logo">
+                                <img src="/DevOps_Assess/deepakraj_deepu_testprep.pem" alt="keypair" width="50" height="50">
+                            </a>
+                    </li>
                 </ul>
                 </p>
                 <br>
@@ -290,7 +310,7 @@
         </div>
 
         <!-- <div class="split right">
-        <div class="centered">
+        <div class="centered">tenant, lauft(tool)on ec2 instancs <-> EKS, Clusters - k8s
             <img src="img_avatar.png" alt="Avatar man">
             <h2>John Doe</h2>
             <p>Some text here too.</p>
